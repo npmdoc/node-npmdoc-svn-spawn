@@ -1,0 +1,1146 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/ddliu/node-svn-spawn">svn-spawn (v0.1.5)</a>
+</h1>
+<h4>SVN access based on svn cli command</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn">module svn-spawn</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.svn-spawn">
+            function <span class="apidocSignatureSpan"></span>svn-spawn
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.joinParams">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.joinParams
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.cmd">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.cmd
+            <span class="apidocSignatureSpan">(cmd, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.endSession">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.endSession
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.getOption">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.getOption
+            <span class="apidocSignatureSpan">(key, defaultValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.option">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.option
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.session">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.session
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.toString">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_">module svn-spawn.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.super_">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.joinParams">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.</span>joinParams
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.joinParams">module svn-spawn.super_.joinParams</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.joinParams.joinParams">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.</span>joinParams
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype">module svn-spawn.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.cmd">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>cmd
+            <span class="apidocSignatureSpan">(cmd, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.endSession">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>endSession
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.getOption">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>getOption
+            <span class="apidocSignatureSpan">(key, defaultValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.option">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>option
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.session">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>session
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype.cmd">module svn-spawn.super_.prototype.cmd</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.cmd.cmd">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>cmd
+            <span class="apidocSignatureSpan">(cmd, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype.endSession">module svn-spawn.super_.prototype.endSession</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.endSession.endSession">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>endSession
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype.getOption">module svn-spawn.super_.prototype.getOption</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.getOption.getOption">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>getOption
+            <span class="apidocSignatureSpan">(key, defaultValue)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype.option">module svn-spawn.super_.prototype.option</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.option.option">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>option
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.super_.prototype.session">module svn-spawn.super_.prototype.session</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.super_.prototype.session.session">
+            function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>session
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.svn-spawn.toString">module svn-spawn.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.svn-spawn.toString.toString">
+            function <span class="apidocSignatureSpan">svn-spawn.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn" id="apidoc.module.svn-spawn">module svn-spawn</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.svn-spawn" id="apidoc.element.svn-spawn.svn-spawn">
+        function <span class="apidocSignatureSpan"></span>svn-spawn
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">svn-spawn = function (options) {
+    this.option({
+        program: 'svn'
+    }).option(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_" id="apidoc.element.svn-spawn.super_">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+    var defaultOptions = {
+        program: null,
+        cwd: null,
+        silent: false
+    };
+
+    this.option(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.joinParams" id="apidoc.element.svn-spawn.super_.joinParams">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.joinParams
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.joinParams = function () {
+    var result = [];
+    for (var i = 0; i &lt; arguments.length; i++) {
+        if (arguments[i] !== undefined &amp;&amp; arguments[i] !== null) {
+            if (util.isArray(arguments[i])) {
+                result = result.concat(arguments[i]);
+            }
+            else {
+                result.push(arguments[i]);
+            }
+        }
+    }
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.cmd" id="apidoc.element.svn-spawn.super_.prototype.cmd">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.cmd
+        <span class="apidocSignatureSpan">(cmd, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.prototype.cmd = function (cmd, callback) {
+    if (!util.isArray(cmd)) {
+        cmd = [cmd];
+    }
+
+    var options = this.getOption(),
+        program,
+        s,
+        cwd = options.cwd,
+        outputData = [],
+        errorData = [];
+
+    if (typeof options.program === 'string') {
+        program = options.program;
+    }
+    else {
+        program = cmd.shift();
+    }
+
+    if (typeof cwd === 'string') {
+        s = spawn(program, cmd,
+            {
+                cwd: cwd
+            }
+        );
+    }
+    else {
+        s = spawn(program, cmd);
+    }
+
+    s.on('error', function(err) {
+        callback &amp;&amp; callback(err);
+    });
+
+    // Do not use "exit" event here, because "Note that the child process stdio streams might still be open."
+    s.on('close', function(code, signal) {
+        var check;
+
+        if ('check' in options &amp;&amp; typeof options.check === 'function') {
+            check = options.check;
+        }
+        else {
+            check = checkSuccess;
+        }
+
+        var outputDataString = outputData.join('');
+        var errorDataString = errorData.join('');
+        // success
+        if (check(outputDataString, code, errorDataString)) {
+            callback &amp;&amp; callback(null, outputDataString);
+        }
+        else {
+            var e = new Error(errorDataString);
+            e.code = code;
+            e.output = outputDataString;
+            callback &amp;&amp; callback(e);
+        }
+    });
+    // s.on('exit', function(code, signal) {
+
+    // });
+    // s.on('disconnect', function() {
+
+    // });
+    // s.on('message', function() {
+
+    // });
+    s.stdout.on('data', function(data) {
+        if (!options.silent) {
+            process.stdout.write(data);
+        }
+        outputData.push(data);
+    });
+    s.stderr.on('data', function(data) {
+        if (!options.silent) {
+            process.stderr.write(data);
+        }
+        errorData.push(data);
+    });
+
+    this.endSession();
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.endSession" id="apidoc.element.svn-spawn.super_.prototype.endSession">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.endSession
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.prototype.endSession = function () {
+    this._sessionOptions = {};
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.getOption" id="apidoc.element.svn-spawn.super_.prototype.getOption">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.getOption
+        <span class="apidocSignatureSpan">(key, defaultValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.prototype.getOption = function (key, defaultValue) {
+    init(this);
+    // get all
+    if (arguments.length === 0) {
+        return mergeOptions({}, this._options, this._sessionOptions);
+    }
+
+    if (key in this._sessionOptions) {
+        return this._sessionOptions[key];
+    }
+    if (key in this._options) {
+        return this._options[key];
+    }
+
+    return defaultValue;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.option" id="apidoc.element.svn-spawn.super_.prototype.option">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.option
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.prototype.option = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._options, options);
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.session" id="apidoc.element.svn-spawn.super_.prototype.session">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_.prototype.session
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_.prototype.session = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._sessionOptions, options);
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.toString" id="apidoc.element.svn-spawn.toString">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_" id="apidoc.module.svn-spawn.super_">module svn-spawn.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.super_" id="apidoc.element.svn-spawn.super_.super_">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+    var defaultOptions = {
+        program: null,
+        cwd: null,
+        silent: false
+    };
+
+    this.option(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.joinParams" id="apidoc.element.svn-spawn.super_.joinParams">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.</span>joinParams
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">joinParams = function () {
+    var result = [];
+    for (var i = 0; i &lt; arguments.length; i++) {
+        if (arguments[i] !== undefined &amp;&amp; arguments[i] !== null) {
+            if (util.isArray(arguments[i])) {
+                result = result.concat(arguments[i]);
+            }
+            else {
+                result.push(arguments[i]);
+            }
+        }
+    }
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.joinParams" id="apidoc.module.svn-spawn.super_.joinParams">module svn-spawn.super_.joinParams</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.joinParams.joinParams" id="apidoc.element.svn-spawn.super_.joinParams.joinParams">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.</span>joinParams
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">joinParams = function () {
+    var result = [];
+    for (var i = 0; i &lt; arguments.length; i++) {
+        if (arguments[i] !== undefined &amp;&amp; arguments[i] !== null) {
+            if (util.isArray(arguments[i])) {
+                result = result.concat(arguments[i]);
+            }
+            else {
+                result.push(arguments[i]);
+            }
+        }
+    }
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype" id="apidoc.module.svn-spawn.super_.prototype">module svn-spawn.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.cmd" id="apidoc.element.svn-spawn.super_.prototype.cmd">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>cmd
+        <span class="apidocSignatureSpan">(cmd, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cmd = function (cmd, callback) {
+    if (!util.isArray(cmd)) {
+        cmd = [cmd];
+    }
+
+    var options = this.getOption(),
+        program,
+        s,
+        cwd = options.cwd,
+        outputData = [],
+        errorData = [];
+
+    if (typeof options.program === 'string') {
+        program = options.program;
+    }
+    else {
+        program = cmd.shift();
+    }
+
+    if (typeof cwd === 'string') {
+        s = spawn(program, cmd,
+            {
+                cwd: cwd
+            }
+        );
+    }
+    else {
+        s = spawn(program, cmd);
+    }
+
+    s.on('error', function(err) {
+        callback &amp;&amp; callback(err);
+    });
+
+    // Do not use "exit" event here, because "Note that the child process stdio streams might still be open."
+    s.on('close', function(code, signal) {
+        var check;
+
+        if ('check' in options &amp;&amp; typeof options.check === 'function') {
+            check = options.check;
+        }
+        else {
+            check = checkSuccess;
+        }
+
+        var outputDataString = outputData.join('');
+        var errorDataString = errorData.join('');
+        // success
+        if (check(outputDataString, code, errorDataString)) {
+            callback &amp;&amp; callback(null, outputDataString);
+        }
+        else {
+            var e = new Error(errorDataString);
+            e.code = code;
+            e.output = outputDataString;
+            callback &amp;&amp; callback(e);
+        }
+    });
+    // s.on('exit', function(code, signal) {
+
+    // });
+    // s.on('disconnect', function() {
+
+    // });
+    // s.on('message', function() {
+
+    // });
+    s.stdout.on('data', function(data) {
+        if (!options.silent) {
+            process.stdout.write(data);
+        }
+        outputData.push(data);
+    });
+    s.stderr.on('data', function(data) {
+        if (!options.silent) {
+            process.stderr.write(data);
+        }
+        errorData.push(data);
+    });
+
+    this.endSession();
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+});
+```
+
+Run any svn command
+
+```js
+client.<span class="apidocCodeKeywordSpan">cmd</span>(['subcommand', '--option1=xx', '--option2=xx'
+;, 'arg1', 'arg2'], function(err, data) {
+    console.log('subcommand done');
+});
+```
+
+## Result Object
+
+`getXXX` methods will return parsed data as object.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.endSession" id="apidoc.element.svn-spawn.super_.prototype.endSession">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>endSession
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">endSession = function () {
+    this._sessionOptions = {};
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.getOption" id="apidoc.element.svn-spawn.super_.prototype.getOption">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>getOption
+        <span class="apidocSignatureSpan">(key, defaultValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOption = function (key, defaultValue) {
+    init(this);
+    // get all
+    if (arguments.length === 0) {
+        return mergeOptions({}, this._options, this._sessionOptions);
+    }
+
+    if (key in this._sessionOptions) {
+        return this._sessionOptions[key];
+    }
+    if (key in this._options) {
+        return this._options[key];
+    }
+
+    return defaultValue;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.option" id="apidoc.element.svn-spawn.super_.prototype.option">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>option
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">option = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._options, options);
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.session" id="apidoc.element.svn-spawn.super_.prototype.session">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>session
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">session = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._sessionOptions, options);
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype.cmd" id="apidoc.module.svn-spawn.super_.prototype.cmd">module svn-spawn.super_.prototype.cmd</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.cmd.cmd" id="apidoc.element.svn-spawn.super_.prototype.cmd.cmd">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>cmd
+        <span class="apidocSignatureSpan">(cmd, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cmd = function (cmd, callback) {
+    if (!util.isArray(cmd)) {
+        cmd = [cmd];
+    }
+
+    var options = this.getOption(),
+        program,
+        s,
+        cwd = options.cwd,
+        outputData = [],
+        errorData = [];
+
+    if (typeof options.program === 'string') {
+        program = options.program;
+    }
+    else {
+        program = cmd.shift();
+    }
+
+    if (typeof cwd === 'string') {
+        s = spawn(program, cmd,
+            {
+                cwd: cwd
+            }
+        );
+    }
+    else {
+        s = spawn(program, cmd);
+    }
+
+    s.on('error', function(err) {
+        callback &amp;&amp; callback(err);
+    });
+
+    // Do not use "exit" event here, because "Note that the child process stdio streams might still be open."
+    s.on('close', function(code, signal) {
+        var check;
+
+        if ('check' in options &amp;&amp; typeof options.check === 'function') {
+            check = options.check;
+        }
+        else {
+            check = checkSuccess;
+        }
+
+        var outputDataString = outputData.join('');
+        var errorDataString = errorData.join('');
+        // success
+        if (check(outputDataString, code, errorDataString)) {
+            callback &amp;&amp; callback(null, outputDataString);
+        }
+        else {
+            var e = new Error(errorDataString);
+            e.code = code;
+            e.output = outputDataString;
+            callback &amp;&amp; callback(e);
+        }
+    });
+    // s.on('exit', function(code, signal) {
+
+    // });
+    // s.on('disconnect', function() {
+
+    // });
+    // s.on('message', function() {
+
+    // });
+    s.stdout.on('data', function(data) {
+        if (!options.silent) {
+            process.stdout.write(data);
+        }
+        outputData.push(data);
+    });
+    s.stderr.on('data', function(data) {
+        if (!options.silent) {
+            process.stderr.write(data);
+        }
+        errorData.push(data);
+    });
+
+    this.endSession();
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+});
+```
+
+Run any svn command
+
+```js
+client.<span class="apidocCodeKeywordSpan">cmd</span>(['subcommand', '--option1=xx', '--option2=xx'
+;, 'arg1', 'arg2'], function(err, data) {
+    console.log('subcommand done');
+});
+```
+
+## Result Object
+
+`getXXX` methods will return parsed data as object.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype.endSession" id="apidoc.module.svn-spawn.super_.prototype.endSession">module svn-spawn.super_.prototype.endSession</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.endSession.endSession" id="apidoc.element.svn-spawn.super_.prototype.endSession.endSession">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>endSession
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">endSession = function () {
+    this._sessionOptions = {};
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype.getOption" id="apidoc.module.svn-spawn.super_.prototype.getOption">module svn-spawn.super_.prototype.getOption</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.getOption.getOption" id="apidoc.element.svn-spawn.super_.prototype.getOption.getOption">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>getOption
+        <span class="apidocSignatureSpan">(key, defaultValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getOption = function (key, defaultValue) {
+    init(this);
+    // get all
+    if (arguments.length === 0) {
+        return mergeOptions({}, this._options, this._sessionOptions);
+    }
+
+    if (key in this._sessionOptions) {
+        return this._sessionOptions[key];
+    }
+    if (key in this._options) {
+        return this._options[key];
+    }
+
+    return defaultValue;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype.option" id="apidoc.module.svn-spawn.super_.prototype.option">module svn-spawn.super_.prototype.option</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.option.option" id="apidoc.element.svn-spawn.super_.prototype.option.option">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>option
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">option = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._options, options);
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.super_.prototype.session" id="apidoc.module.svn-spawn.super_.prototype.session">module svn-spawn.super_.prototype.session</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.super_.prototype.session.session" id="apidoc.element.svn-spawn.super_.prototype.session.session">
+        function <span class="apidocSignatureSpan">svn-spawn.super_.prototype.</span>session
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">session = function () {
+    var options;
+    init(this);
+    if (arguments.length &gt; 1) {
+        options = {};
+        options[arguments[0]] = arguments[1]
+    }
+    else {
+        options = arguments[0];
+    }
+
+    mergeOptions(this._sessionOptions, options);
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.svn-spawn.toString" id="apidoc.module.svn-spawn.toString">module svn-spawn.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.svn-spawn.toString.toString" id="apidoc.element.svn-spawn.toString.toString">
+        function <span class="apidocSignatureSpan">svn-spawn.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
