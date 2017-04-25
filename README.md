@@ -1,6 +1,6 @@
 # npmdoc-svn-spawn
 
-#### api documentation for  [svn-spawn (v0.1.5)](https://github.com/ddliu/node-svn-spawn)  [![npm package](https://img.shields.io/npm/v/npmdoc-svn-spawn.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-svn-spawn) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-svn-spawn.svg)](https://travis-ci.org/npmdoc/node-npmdoc-svn-spawn)
+#### basic api documentation for  [svn-spawn (v0.1.5)](https://github.com/ddliu/node-svn-spawn)  [![npm package](https://img.shields.io/npm/v/npmdoc-svn-spawn.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-svn-spawn) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-svn-spawn.svg)](https://travis-ci.org/npmdoc/node-npmdoc-svn-spawn)
 
 #### SVN access based on svn cli command
 
@@ -63,7 +63,8 @@
     "scripts": {
         "test": "./test/init.sh && ./node_modules/.bin/nodeunit test"
     },
-    "version": "0.1.5"
+    "version": "0.1.5",
+    "bin": {}
 }
 ```
 
